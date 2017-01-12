@@ -1,5 +1,4 @@
-`unitytuts` is just a repository for me to learn about Unity.
-Things learnt:
+`unitytuts` is just a repository for me to learn about Unity and how to setup a clean build pipeline for Unity projects.
 
 == Roll-a-Ball tutorial
 
