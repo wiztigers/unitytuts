@@ -1,0 +1,7 @@
+A prefab is an asset that contains a template, or blueprint of a game object or game object family.
+A prefab is created from an existing game object or game object family,
+and once created, we can use this prefab in any scene in our current project.
+
+With a prefab of an object changes can be made to a single instance of this object in a scene, or to the prefab asset itself,
+and all objects from this prefab in the game will be updated with those changes.
+
