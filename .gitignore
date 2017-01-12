@@ -394,3 +394,5 @@ tags
 *.fatbin
 
 # End of https://www.gitignore.io/api/windows,unity,csharp,c++,monodevelop,vim,cuda
+
+README*.meta
