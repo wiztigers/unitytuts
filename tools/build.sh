@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/bin/sh
 
 builder="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
 project="Roll-a-ball"

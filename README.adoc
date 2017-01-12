@@ -2,6 +2,8 @@
 
 == Roll-a-Ball tutorial
 
+image::https://travis-ci.org/wiztigers/unitytuts.svg?branch=master[link=https://travis-ci.org/wiztigers/unitytuts]
+
 * Only commit the bare minimum number of files for Unity to recognize a folder as a Unity project.
   Use https://www.gitignore.io[gitignore.io] to have an idea of what shouldn't be commited (YMMV).
   In particular:
