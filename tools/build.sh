@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "Building ..."
+find /Applications/Unity -type f -executable
+
 builder="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
 project="Roll-a-ball"
 logfile="unity.log"
