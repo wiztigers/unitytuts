@@ -11,7 +11,7 @@ script:
 - ./tools/build.sh
 deploy:
   provider: releases
-  api_key: ${GITHUB_TOKEN}
+  api_key: "$GITHUB_TOKEN"
   file:
   - "./bin/linux.zip"
   - "./bin/windows.zip"
