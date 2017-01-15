@@ -14,6 +14,7 @@ deploy:
   api_key: ${GITHUB_TOKEN}
   file:
   - "./bin/linux.zip"
+  - "./bin/windows.zip"
   skip_cleanup: true
   on:
     tags: true
