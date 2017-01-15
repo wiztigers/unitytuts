@@ -65,3 +65,4 @@ install "MacEditorInstaller/Unity.pkg"
 install "MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-$version.pkg"
 install "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$version.pkg"
 install "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$version.pkg"
+
