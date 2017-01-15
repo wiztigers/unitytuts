@@ -7,15 +7,7 @@ build() {
   project=$1
   target=$2
   echo -n "Build project:$project for target:$target ..."
-  if [ "$target" == "Linux" ]; then
-    option="buildLinuxUniversalPlayer"
-  fi
-  if [ "$target" == "Mac" ]; then
-    option="buildOSXERRORUniversalPlayer"
-  fi
-  if [ "$target" == "Windows" ]; then
-    option="buildWindowsPlayer"
-  fi
+  option=$3
   $builder -batchmode -nographics -silent-crashes \
     -projectPath $(pwd) \
     -logFile $(pwd)/$logfile \
