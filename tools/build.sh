@@ -20,7 +20,7 @@ $builder -batchmode -nographics -silent-crashes \
 -buildLinuxUniversalPlayer "$(pwd)/bin/linux/$project.sh" \
 -quit
 echo "Done."
-cd bin/linux ; zip -r ../../linux.zip . ; cd -
+cd bin/linux ; zip -r ../linux.zip . ; cd -
 ls -lR
 
 echo 'Build log:'

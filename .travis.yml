@@ -9,3 +9,11 @@ install:
 - ./tools/install.sh
 script:
 - ./tools/build.sh
+deploy:
+  provider: releases
+  api_key: ${GITHUB_TOKEN}
+  file:
+  - "./bin/linux.zip"
+  skip_cleanup: true
+  on:
+    tags: true
