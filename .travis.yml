@@ -13,8 +13,8 @@ deploy:
   provider: releases
   api_key: "$GITHUB_TOKEN"
   file:
-  - "./bin/linux.zip"
-  - "./bin/windows.zip"
+  - "./bin/Roll-a-ball-linux.zip"
+  - "./bin/Roll-a-ball-windows.zip"
   skip_cleanup: true
   on:
     tags: true
