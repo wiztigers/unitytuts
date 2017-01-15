@@ -2,7 +2,9 @@
 
 == Roll-a-Ball tutorial
 
-image::https://travis-ci.org/wiztigers/unitytuts.svg?branch=master[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=target=%22Linux%22&label=linux[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=target=%22Mac%22&label=osx[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=target=%22Windows%22&label=windows[link=https://travis-ci.org/wiztigers/unitytuts]
 
 * Only commit the bare minimum number of files for Unity to recognize a folder as a Unity project.
   Use https://www.gitignore.io[gitignore.io] to have an idea of what shouldn't be commited (YMMV).
