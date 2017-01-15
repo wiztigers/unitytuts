@@ -46,7 +46,7 @@ version=5.5.0f3
 
 download() {
   file=$1
-  url="$base_rul/$changeset/$package"
+  url="$base_url/$changeset/$package"
 
   echo "Download from $url:"
   curl -o `basename "$package"` "$url"
