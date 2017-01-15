@@ -39,15 +39,14 @@
 # $base_url/$changeset/unity-$version-$platform.ini
 # (where platform is 'osx' or 'win') has this info
 
+target=$1
 #base_url=http://netstorage.unity3d.com/unity
 base_url=http://download.unity3d.com/download_unity
 changeset=38b4efef76f0
 version=5.5.0f3
 
 download() {
-  file=$1
   url="$base_url/$changeset/$package"
-
   echo "Download from $url:"
   curl -o `basename "$package"` "$url"
 }
@@ -62,7 +61,5 @@ install() {
 }
 
 install "MacEditorInstaller/Unity.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-$version.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$version.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$version.pkg"
+install "MacEditorTargetInstaller/UnitySetup-$target-Support-for-Editor-$version.pkg"
 

@@ -2,19 +2,22 @@ language: objective-c
 osx_image: xcode61
 rvm:
 - 2.1.2
+env:
+- project="Roll-a-ball" target="Linux"
+- project="Roll-a-ball" target="Windows"
 before_install:
 - chmod +x ./tools/install.sh
 - chmod +x ./tools/build.sh
 install:
-- ./tools/install.sh
+- ./tools/install.sh $target
 script:
-- ./tools/build.sh
+- ./tools/build.sh $project $target
 deploy:
   provider: releases
   api_key: "$GITHUB_TOKEN"
   file:
-  - "./bin/Roll-a-ball-linux.zip"
-  - "./bin/Roll-a-ball-windows.zip"
+  - "./bin/Roll-a-ball_${target}.zip"
+  - "./bin/Roll-a-ball_${target}.zip"
   skip_cleanup: true
   on:
     tags: true
