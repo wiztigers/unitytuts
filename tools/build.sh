@@ -10,6 +10,9 @@ build() {
   if [ "$target" == "Linux" ]; then
     option="buildLinuxUniversalPlayer"
   fi
+  if [ "$target" == "Mac" ]; then
+    option="buildOSXERRORUniversalPlayer"
+  fi
   if [ "$target" == "Windows" ]; then
     option="buildWindowsPlayer"
   fi
