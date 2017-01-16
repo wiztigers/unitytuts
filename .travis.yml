@@ -10,9 +10,9 @@ before_install:
 - chmod +x ./tools/install.sh
 - chmod +x ./tools/build.sh
 install:
-- ./tools/install.sh $target
+- ./tools/install.sh "$target"
 script:
-- ./tools/build.sh $project $target $option
+- ./tools/build.sh "$project" "$target" "$option"
 deploy:
   provider: releases
   api_key: "$GITHUB_TOKEN"
