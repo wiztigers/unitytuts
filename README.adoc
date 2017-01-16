@@ -17,4 +17,20 @@ image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=
 * Unity uses a lot of binary files.
   As many of these live and may change during development, and as git doesn't properly manage binaries in its diffs,
   precommit/prepull hooks should be used in conjunction with something like `git-annex` or `git-fat` as long as a separate repository
-  (http://stackoverflow.com/questions/540535/managing-large-binary-files-with-git/29530784[directions]).
+  for binaries (http://stackoverflow.com/questions/540535/managing-large-binary-files-with-git/29530784[directions]).
+* To be more scm-friendly to boot, one can however easily force text format instead of binary format on Unity.
+  The following parameters should be set at the start of each new Unity project. +
+  In Unity: `Edit` > `Project Settings` > `Editor`
+** In `Version Control` section, choose `Visible Meta Files`
+** In `Asset Serialization` section, choose `Force Text`
+* Recent Unity versions have a basic core installer as long as many additional target modules installers.
+  These additional modules must be installed to be able to build for a specific target platform.
+  See https://github.com/wiztigers/unitytuts/blob/master/tools/install.sh[install.sh] for additional information.
+* A nice continuous integration system should be able to run concurrent build jobs, one for each target platform.
+  This is done by the current project, using https://travis-ci.org/wiztigers/unitytuts[travis-ci]'s build matrix feature
+  as long as https://github.com/exogen/badge-matrix[badge-matrix], which is used to display per-job/per-platform badges
+  instead of just the one badge made available by travis-ci for general build status. +
+  Each job does:
+1. install unity and the required modules, then
+2. build for its specific target platform, and finally
+3. archive the produced binaries so they can be delivered for a release (ie. git tag)
