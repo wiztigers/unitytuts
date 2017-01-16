@@ -14,11 +14,11 @@ build() {
     -logFile $(pwd)/$logfile \
     -$option "$(pwd)/bin/$target/$project.sh" \
     -quit
-  echo "Create artefact \"$project-$target\".zip ..."
-  pushd bin/$target" && zip -r "\"../$project-$target.zip\"" . && popd
+  echo "Create artefact \"$project-$target.zip\" ..."
+  pushd bin/$target && zip -r "../$project-$target.zip" . && popd
 
-#  echo "Build log:"
-#  cat $(pwd)/unity.log
+  echo "Unity build log \"$logfile\":"
+  cat $logfile
 
   popd
 }
