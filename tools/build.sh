@@ -23,5 +23,5 @@ build() {
   popd
 }
 
-build $1 $2 $3
+build "$1" "$2" "$3"
 
