@@ -13,8 +13,8 @@ build() {
     -logFile $(pwd)/$logfile \
     -$option "$(pwd)/bin/$target/$project.sh" \
     -quit
-  echo "Create artefact $project_$target ..."
-  cd "$(pwd)/bin/$target" ; zip -r "../$project_$target.zip" . ; cd -
+  echo "Create artefact "$project"_"$target".zip ..."
+  cd "$(pwd)/bin/$target" ; zip -r "../"$project"_"$target".zip" . ; cd -
 }
 
 build $1 $2 $3
