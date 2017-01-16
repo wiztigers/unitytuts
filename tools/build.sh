@@ -6,17 +6,18 @@ logfile="unity.log"
 build() {
   project=$1
   target=$2
-  echo -n "Build project:$project for target:$target ..."
+  echo "Build project:$project for target:$target ..."
   option=$3
   $builder -batchmode -nographics -silent-crashes \
     -projectPath $(pwd) \
     -logFile $(pwd)/$logfile \
     -$option "$(pwd)/bin/$target/$project.sh" \
     -quit
-  cd "bin/$target" ; zip -r "../$project_$target.zip" . ; cd -
+  echo "Create artefact $project_$target ..."
+  cd "$(pwd)/bin/$target" ; zip -r "../$project_$target.zip" . ; cd -
 }
 
-build $1 $2
+build $1 $2 $3
 
 echo 'Build log:'
 cat $(pwd)/unity.log
