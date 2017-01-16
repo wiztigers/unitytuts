@@ -6,9 +6,9 @@ env:
 - project="Roll a Ball" target="Linux"   option="buildLinuxUniversalPlayer"
 - project="Roll a Ball" target="Mac"     option="buildOSXUniversalPlayer"
 - project="Roll a Ball" target="Windows" option="buildWindowsPlayer"
-- project="Tanks!"      target="Linux"   option="buildLinuxUniversalPlayer"
-- project="Tanks!"      target="Mac"     option="buildOSXUniversalPlayer"
-- project="Tanks!"      target="Windows" option="buildWindowsPlayer"
+- project="Tanks!" target="Linux"   option="buildLinuxUniversalPlayer"
+- project="Tanks!" target="Mac"     option="buildOSXUniversalPlayer"
+- project="Tanks!" target="Windows" option="buildWindowsPlayer"
 before_install:
 - chmod +x ./tools/install.sh
 - chmod +x ./tools/build.sh
