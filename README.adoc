@@ -2,9 +2,9 @@
 
 == Roll-a-Ball tutorial
 
-image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=target=%22Linux%22&label=linux[link=https://travis-ci.org/wiztigers/unitytuts]
-image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=target=%22Mac%22&label=osx[link=https://travis-ci.org/wiztigers/unitytuts]
-image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=target=%22Windows%22&label=windows[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=project=%22Roll%20a%20Ball%22%20target=%22Linux%22&label=linux[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=project=%22Roll%20a%20Ball%22%20target=%22Mac%22&label=osx[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=project=%22Roll%20a%20Ball%22%20target=%22Windows%22&label=windows[link=https://travis-ci.org/wiztigers/unitytuts]
 
 * Only commit the bare minimum number of files for Unity to recognize a folder as a Unity project.
   Use https://www.gitignore.io[gitignore.io] to have an idea of what shouldn't be commited (YMMV).
@@ -34,3 +34,9 @@ image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=
 1. install unity and the required modules, then
 2. build for its specific target platform, and finally
 3. archive the produced binaries so they can be delivered for a release (ie. git tag)
+
+== Tanks! tutorial
+
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=project=%22Tanks!%22%20target=%22Linux%22&label=linux[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=project=%22Tanks!%22%20target=%22Mac%22&label=osx[link=https://travis-ci.org/wiztigers/unitytuts]
+image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=project=%22Tanks!%22%20target=%22Windows%22&label=windows[link=https://travis-ci.org/wiztigers/unitytuts]
