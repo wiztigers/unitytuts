@@ -3,9 +3,9 @@ osx_image: xcode61
 rvm:
 - 2.1.2
 env:
-- project="Roll-a-ball" target="Linux"   option="buildLinuxUniversalPlayer"
-- project="Roll-a-ball" target="Mac"     option="buildOSXUniversalPlayer"
-- project="Roll-a-ball" target="Windows" option="buildWindowsPlayer"
+- project="Roll a Ball" target="Linux"   option="buildLinuxUniversalPlayer"
+- project="Roll a Ball" target="Mac"     option="buildOSXUniversalPlayer"
+- project="Roll a Ball" target="Windows" option="buildWindowsPlayer"
 before_install:
 - chmod +x ./tools/install.sh
 - chmod +x ./tools/build.sh
@@ -17,7 +17,7 @@ deploy:
   provider: releases
   api_key: "$GITHUB_TOKEN"
   file:
-  - "./bin/${project}_${target}.zip"
+  - "./bin/${project}-${target}.zip"
   skip_cleanup: true
   on:
     tags: true
