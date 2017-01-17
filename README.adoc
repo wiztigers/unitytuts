@@ -16,7 +16,7 @@ image:https://badges.herokuapp.com/travis/wiztigers/unitytuts?branch=master&env=
    (https://unity3d.com/fr/learn/tutorials/topics/production/mastering-unity-project-folder-structure-version-control-systems[source]).
 * Unity uses a lot of binary files.
 **  As many of these live and may change during development, and as git doesn't properly manage binaries in its diffs,
-   precommit/prepull hooks should be used in conjunction with something like `git-annex` or `git-fat` as long as a separate repository
+   precommit/prepull hooks should be used in conjunction with something like `git-lfs`, `git-annex` or `git-fat` as long as a separate repository
    for binaries (http://stackoverflow.com/questions/540535/managing-large-binary-files-with-git/29530784[directions]).
 ** To be more scm-friendly to boot, one can however easily force text format instead of binary format on Unity.
    I'm unsure about the impact on performance ; however, from a workflow point of view (be it considering a team of one or of many),
